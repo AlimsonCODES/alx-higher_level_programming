@@ -7,12 +7,11 @@ lastdigitt = int(lastdigit)
 if number < 0:
     lastdigitt = 0 - lastdigitt
 
-string = ""
+string = f"Last digit of {number} is {lastdigitt}"
 
 if lastdigitt == 0:
-    string = "and is 0"
+    print(f"{string} and is 0")
 elif lastdigitt > 5:
-    string = "and is greater than 5"
+    print(f"{string} and is greater than 5")
 else:
-    string = "and is less than 6 and not 0"
-print(f"Last digit of {number} is {lastdigitt} {string}\n")
+    print(f"{string} and is less than 6 and not 0")
