@@ -15,4 +15,4 @@ elif lastdigitt > 5:
     string = "and is greater than 5"
 else:
     string = "and is less than 6 and not 0"
-print(f"Last digit of {number} is {lastdigitt} {string}")
+print(f"Last digit of {number} is {lastdigitt} {string}\n")
