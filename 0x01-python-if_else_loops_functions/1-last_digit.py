@@ -6,12 +6,12 @@ lastdigit = str(number)
 lastdigit = lastdigit[-1]
 lastdigitt = int(lastdigit)
 
-string = "and is less than 6 and not 0"
+string = ""
 
 if lastdigitt > 5:
     string = "and is greater than 5"
 elif lastdigitt == 0:
     string = "and is 0"
 else:
-    string
-print(f"Last digit of {number} is {lastdigit} {string}")
+    string = "and is less than 6 and not 0"
+print(f"Last digit of {number} is {lastdigitt} {string}")
