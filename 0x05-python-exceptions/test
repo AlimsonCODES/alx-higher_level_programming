@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-
-mlist = [1, 2, 3, 4, 5, 2]
-x = 0
-print(mlist[x])
-
+def safe_print_integer(value):
+    try:
+        print("{:d}".format(value))
+        return True and value
+    except Exception:
+        return False
+x =200
+boy = safe_print_integer(x) - 1
+print(boy)
