@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def safe_print_division(a, b):
-    ans = 0
+    result = 0
     try:
        result = a / b
     except Exception:
