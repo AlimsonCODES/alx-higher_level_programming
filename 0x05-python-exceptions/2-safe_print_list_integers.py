@@ -2,7 +2,7 @@
 def safe_print_list_integers(my_list=[], x=0):
     i = 0
     for num in range(x):
-        j = my_list[i]
+        j = my_list[num]
         try:
             print("{:d}".format(j), end="")
             i += 1
