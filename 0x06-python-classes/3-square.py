@@ -29,6 +29,6 @@ class Square:
         """
         calculates area
         """
-        return (size ** 2)
+        return (self.__size ** 2)
 
 
