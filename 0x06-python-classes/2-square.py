@@ -5,6 +5,7 @@ this would represent a module for
 working with squares
 """
 
+
 class Square:
 
     """
@@ -12,11 +13,12 @@ class Square:
     and four right angles.
     """
     def __init__(self, size=0):
-        """Initialize a new Square.
+        """
+        Initialize a new Square.
             Args:
                 size (int): The size of the new square.
         """
-        if isdigit(size) is not True:
+        if isinstance(size, int) is not True:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
