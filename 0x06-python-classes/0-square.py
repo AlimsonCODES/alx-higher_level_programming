@@ -11,5 +11,5 @@ class Square:
     a plane figure with four equal straight sides
     and four right angles.
     """
-    
+
     pass
