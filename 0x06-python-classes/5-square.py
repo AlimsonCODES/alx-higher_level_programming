@@ -45,10 +45,10 @@ class Square:
         """
         print '#' for area of square
         """
-        if size == 0:
+        if self.__size == 0:
             print("")
         else:
-            for i in range(size):
-                for num in range(size):
+            for i in range(self.size):
+                for num in range(self.size):
                     print("#", end='')
                 print("")
