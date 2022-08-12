@@ -46,7 +46,7 @@ class Square:
             return self.area() == value.area()
         else:
             return False
-        
+
     def __ne__(self, value):
         if isinstance(value, Square):
             return self.area() != value.area()
@@ -60,7 +60,7 @@ class Square:
             err_msg = "'>' not supported between instances of 'Square' and"
             val_type = str(type(value)).split("'")[1]
             raise TypeError("{} '{}'".format(err_msg, val_type))
-        return False 
+        return False
 
     def __ge__(self, value):
         if isinstance(value, Square):
@@ -79,7 +79,7 @@ class Square:
             val_type = str(type(value)).split("'")[1]
             raise TypeError("{} '{}'".format(err_msg, val_type))
         return False
-    
+
     def __le__(self, value):
         if isinstance(value, Square):
             return self.area() <= value.area()

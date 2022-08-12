@@ -54,15 +54,15 @@ class Square:
             for i in range(self.size):
                 print('{}{}'.format(' ' * self.position[0], '#' * self.size))
 
-     def __str__(self):
-         res = []
-         if self.size == 0:
-             res.append('')
-         else:
-             if self.position[1] > 0:
-                 res.append('{}'.format('\n' * (self.position[1] - 1)))
-                 for i in range(self.size):
-                     res.append('{}{}'.format(
-                         ' ' * self.position[0],
-                         '#' * self.size))
+    def __str__(self):
+        res = []
+        if self.size == 0:
+            res.append('')
+        else:
+            if self.position[1] > 0:
+                res.append('{}'.format('\n' * (self.position[1] - 1)))
+            for i in range(self.size):
+                res.append('{}{}'.format(
+                    ' ' * self.position[0],
+                    '#' * self.size))
         return '\n'.join(res)
