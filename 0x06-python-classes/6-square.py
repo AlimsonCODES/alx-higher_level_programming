@@ -12,6 +12,7 @@ class Square:
     a plane figure with four equal straight sides
     and four right angles.
     """
+
     def __init__(self, size=0, position=(0, 0)):
         """
         Initialize a new Square.
@@ -44,9 +45,9 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if ((not isinstance(value, tuple) or (len(value) != 2)
+        if ((not isinstance(value, tuple)) or (len(value) != 2)):
             raise TypeError("position must be a tuple of 2 positive integers")
-        if (value[0] not isinstance(value, int) and value[1] not isinstance(value, int)) or (value[0] is < 0 and value[1] is < 0):
+        if ((value[0] not isinstance(value, int) and value[1] not isinstance(value, int)) or (value[0] is <= 0 and value[1] is <= 0)):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
