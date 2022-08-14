@@ -28,7 +28,7 @@ class Rectangle:
     @property
     def height(self):
         """Get/set for height.
-        
+
         Returns:
             int: height for triangle.
         """
@@ -64,7 +64,7 @@ class Rectangle:
         Returns:
             int: the new area of triangle.
         """
-        return self.height * self.height
+        return self.height * self.width
 
     def perimeter(self):
         """Function that returns the perimeter of a triangle.
