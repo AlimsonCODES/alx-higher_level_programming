@@ -1,23 +1,21 @@
 #!/usr/bin/python3
-""" module """
+"""a class"""
 
 
 class BaseGeometry:
-    """ yeah yeah"""
+    """an empty class"""
     def area(self):
-        """ function for area """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """ validates integer value """
         if type(value) is not int:
             raise TypeError("{:s} must be an integer".format(name))
-        if value <= 0:
+        elif value < 1:
             raise ValueError("{:s} must be greater than 0".format(name))
 
 
 class Rectangle(BaseGeometry):
-    """ new module"""
+    """Rectangle that inherits from BaseGeometry"""
     def __init__(self, width, height):
         super().__init__()
         self.integer_validator('width', width)
@@ -33,10 +31,10 @@ class Rectangle(BaseGeometry):
 
 
 class Square(Rectangle):
-    """ class for square """
+    """Square that inherits from Rectangle"""
     def __init__(self, size):
-        self.integer_validator('size', size)
-        super()__init__(size, size)
+        self.integer_validator("size", size)
+        super().__init__(size, size)
         self.__size = size
 
     def area(self):
